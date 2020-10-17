@@ -1,18 +1,17 @@
-import React, { useState, useEffect } from "react";
-import { dbService } from "../fbase";
+import React from "react";
 import Auth from "./Auth";
 import { authService } from "../fbase";
 import { useHistory } from "react-router-dom";
 import AddDraw from "../components/AddDraw";
 import AddGoods from "../components/AddGoods";
 
-const Contact = ({ userObj,isLoggedin }) => {
+const Contact = ({ userObj}) => {
     const history = useHistory();
     const onLogOutClick = () => {
       authService.signOut();
       history.push("/");
     };
-    console.log(userObj);
+    
     return (
         <>
         <div>contact</div>

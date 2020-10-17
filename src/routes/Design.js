@@ -4,7 +4,12 @@ import { dbService } from "../fbase";
 
 const Design = ({ userObj }) => {
     const [designs, setdesigns] = useState([]);
+    const [UID, setUID]=useState("");
     useEffect(() => {
+        if(userObj){
+            setUID(userObj.uid)
+        }  
+
       dbService
         .collection("Design")
         .orderBy("createdAt", "desc")
@@ -23,7 +28,7 @@ const Design = ({ userObj }) => {
             <Goods
               key={goods.id}
               GoodsObj={goods}
-              isOwner={goods.creatorId === userObj.uid}
+              isOwner={goods.creatorId === UID}
             />
           ))}
         </div>

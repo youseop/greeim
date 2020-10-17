@@ -86,6 +86,7 @@ const AddGoods = ({ userObj }) => {
         <div>
           <img
             src={Goodsattachment}
+            alt=""
             style={{
               backgroundImage: Goodsattachment,
             }}

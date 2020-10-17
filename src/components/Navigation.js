@@ -2,16 +2,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Navigation = ({ userObj }) => (
-  <nav>
+  <nav className="Navigation">
     <ul>
       <li>
-        <Link to="/">illustration</Link>
+        <Link to="/" className="link first">illustration</Link>
       </li>
       <li>
-        <Link to="/Design">design</Link>
+        <Link to="/Design" className="link">design</Link>
       </li>
       <li>
-        <Link to="/Contact">contact</Link>
+        <Link to="/Contact" className="link">contact</Link>
       </li>
     </ul>
   </nav>

@@ -27,23 +27,19 @@ function App() {
       updateProfile: (args) => user.updateProfile(args),
     });
   };
-  console.log(Boolean(userObj))
   return (
-    <>
-    
+    <div className="APP">
+      <div className="greeim">greeim</div>
       {init ? (
-      <>
-      <div>greeim</div>
         <AppRouter
           refreshUser={refreshUser}
           isLoggedIn={Boolean(userObj)}
           userObj={userObj}
         />
-        </>
       ) : (
         "Initializing..."
       )}
-    </>
+    </div>
   );
 }
 

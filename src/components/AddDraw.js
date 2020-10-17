@@ -89,6 +89,7 @@ const AddDraw = ({ userObj }) => {
         <div>
           <img
             src={attachment}
+            alt=""
             style={{
               backgroundImage: attachment,
             }}

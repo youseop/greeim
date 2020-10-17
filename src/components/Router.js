@@ -18,7 +18,7 @@ const AppRouter = ({ refreshUser, isLoggedIn, userObj }) => {
               <Design userObj={userObj}/>
             </Route>
             <Route exact path="/Contact">
-              <Contact userObj={userObj} refreshUser={refreshUser} isLoggedIn={isLoggedIn}/>
+              <Contact userObj={userObj}/>
             </Route>
           </>  
       </Switch>

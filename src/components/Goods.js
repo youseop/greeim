@@ -47,7 +47,7 @@ const Goods = ({ GoodsObj, isOwner }) => {
         ) : (
           <>
             <h4>{GoodsObj.text}</h4>
-            {GoodsObj.GoodsattachmentUrl && <img src={GoodsObj.GoodsattachmentUrl} />}
+            {GoodsObj.GoodsattachmentUrl && <img src={GoodsObj.GoodsattachmentUrl} alt=""/>}
             {isOwner && (
               <div>
                 <span onClick={onDeleteClick}>
