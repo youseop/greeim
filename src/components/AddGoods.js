@@ -67,11 +67,14 @@ const AddGoods = ({ userObj }) => {
           type="text"
           placeholder="info - Design"
           maxLength={120}
+          className="adddraw_textinput"
         />
-        <input type="submit" value="&rarr;"/>
+        <input type="submit" value="Update"
+          className="adddraw_submit"/>
       </div>
       <label htmlFor="attach-file-design">
-        <span>Add Design</span>
+        <span
+          className="adddraw_imginput">Add Design</span>
       </label>
       <input
         id="attach-file-design"
@@ -90,9 +93,10 @@ const AddGoods = ({ userObj }) => {
             style={{
               backgroundImage: Goodsattachment,
             }}
+            className="adddraw_attachment"
           />
           <div onClick={onClearGoodsAttachment}>
-            <span>Remove</span>
+            <span className="adddraw_imginput">Remove</span>
           </div>
         </div>
       )}

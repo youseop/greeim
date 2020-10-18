@@ -1,3 +1,5 @@
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import { dbService, storageService } from "../fbase";
 
@@ -48,7 +50,13 @@ const DRAW = ({ DrawObj, isOwner }) => {
         ) : (
           <div className="imgbox_draw">
             {/* <h4>{DrawObj.text}</h4> */}
-            {DrawObj.attachmentUrl && <img src={DrawObj.attachmentUrl} alt="" className="img_draw"/>}
+            {DrawObj.attachmentUrl && 
+            <div>
+            <img src={DrawObj.attachmentUrl} alt="" className="img_draw"/>
+            <div className="darkness_draw">
+                <FontAwesomeIcon icon={faPlus} /></div>
+            </div>
+            }
             {isOwner && (
               <div className="DeleteEdit_img">
                 <span onClick={onDeleteClick} className="btn_draw">

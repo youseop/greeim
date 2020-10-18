@@ -4,6 +4,8 @@ import { authService } from "../fbase";
 import { useHistory } from "react-router-dom";
 import AddDraw from "../components/AddDraw";
 import AddGoods from "../components/AddGoods";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 const Contact = ({ userObj}) => {
     const history = useHistory();
@@ -14,17 +16,29 @@ const Contact = ({ userObj}) => {
     
     return (
         <>
-        <div>contact</div>
+        
         {userObj ? (
-        <>
-        <span onClick={onLogOutClick}>Log Out</span>
-        <div>Illustration</div>
+        <div className="admin_container">
+        <span onClick={onLogOutClick} className="admin_logout">Log Out</span>
+        <div className="illust">
+        <div className="admin_Illustration">Illustration</div>
         <AddDraw userObj={userObj}/>
-        <div>Design</div>
+        </div>  
+        <div className="illust">
+        <div className="admin_Illustration">Design</div>
         <AddGoods userObj={userObj}/>
-        </>
+        </div>
+        </div>
         ):(
-        <Auth />
+        <div className="before_login">
+          <a href="https://www.instagram.com/imgreeim/" rel="noopener noreferrer" target="_blank" className="insta_link">
+                @imgreeim<FontAwesomeIcon icon={faInstagram} /></a>
+          <div className="contact_text">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+          Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+          Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+          </div>
+          <Auth />
+        </div>
         )}
         </>
     );

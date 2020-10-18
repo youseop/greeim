@@ -22,8 +22,8 @@ const Design = ({ userObj }) => {
         });
     }, []);
     return (
-      <div>
-        <div style={{ marginTop: 30 }}>
+      <div className="MAIN">
+        <div className="MAIN_container">
           {designs.map((goods) => (
             <Goods
               key={goods.id}

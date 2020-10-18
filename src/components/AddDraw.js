@@ -8,11 +8,11 @@ const AddDraw = ({ userObj }) => {
   const onSubmit = async (event) => {
     event.preventDefault();
     if (DRAW === "") {
-        alert('Submit after write explanation');
+        alert('Text input invalid');
       return;
     }
     else if (attachment === "") {
-        alert('Submit after attach your Photo');
+        alert('Img input invalid');
         return;
       }
     let attachmentUrl = "";
@@ -70,11 +70,14 @@ const AddDraw = ({ userObj }) => {
           type="text"
           placeholder="info - Illustration"
           maxLength={120}
+          className="adddraw_textinput"
         />
-        <input type="submit" value="&rarr;"/>
+        <input type="submit" value="Update"
+          className="adddraw_submit"/>
       </div>
       <label htmlFor="attach-file-illustration">
-        <span>Add Illustration</span>
+        <span
+          className="adddraw_imginput">Add Illustration</span>
       </label>
       <input
         id="attach-file-illustration"
@@ -93,9 +96,10 @@ const AddDraw = ({ userObj }) => {
             style={{
               backgroundImage: attachment,
             }}
+            className="adddraw_attachment"
           />
           <div onClick={onClearAttachment}>
-            <span>Remove</span>
+            <span className="adddraw_imginput">Remove</span>
           </div>
         </div>
       )}

@@ -1,3 +1,5 @@
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import { dbService, storageService } from "../fbase";
 
@@ -28,7 +30,7 @@ const Goods = ({ GoodsObj, isOwner }) => {
     return (
       <div>
         {editing ? (
-          <>
+          <div className="edit_draw">
             <form onSubmit={onSubmit}>
               <input
                 type="text"
@@ -38,27 +40,35 @@ const Goods = ({ GoodsObj, isOwner }) => {
                 autoFocus
                 onChange={onChange}
               />
-              <input type="submit" value="Update explanation"/>
+              <input type="submit" value="Update explanation" className="editbtn_draw"/>
             </form>
-            <span onClick={toggleEditing}>
+            <span onClick={toggleEditing} className="editbtn_draw">
               Cancel
             </span>
-          </>
+          </div>
         ) : (
-          <>
-            <h4>{GoodsObj.text}</h4>
-            {GoodsObj.GoodsattachmentUrl && <img src={GoodsObj.GoodsattachmentUrl} alt=""/>}
+          <div className="Goods_controller">
+          <div className="imgbox_draw">
+            {GoodsObj.GoodsattachmentUrl && 
+            <div>
+            <img src={GoodsObj.GoodsattachmentUrl} alt="" className="img_draw"/>
+            <div className="darkness_draw">
+                <FontAwesomeIcon icon={faPlus} /></div>
+            </div>
+            }
             {isOwner && (
-              <div>
-                <span onClick={onDeleteClick}>
+              <div className="DeleteEdit_img">
+                <span onClick={onDeleteClick} className="btn_draw">
                     Delete
                 </span>
-                <span onClick={toggleEditing}>
+                <span onClick={toggleEditing} className="btn_draw">
                     Edit
                 </span>
               </div>
             )}
-          </>
+          </div>
+          <div className="Goods_text">{GoodsObj.text}</div>
+          </div>
         )}
       </div>
     );
