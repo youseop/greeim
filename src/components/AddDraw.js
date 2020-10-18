@@ -89,7 +89,7 @@ const AddDraw = ({ userObj }) => {
         }}
       />
       {attachment && (
-        <div>
+        <div style={{display: "flex", alignItems:"center"}}>
           <img
             src={attachment}
             alt=""
