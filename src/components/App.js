@@ -31,7 +31,9 @@ function App() {
   };
   return (
     <div className="APP">
-      <div className="greeim">greeim</div>
+      <div className="greeim">greeim<a href="https://www.instagram.com/imgreeim/" rel="noopener noreferrer" target="_blank" className="insta_link">
+                <FontAwesomeIcon icon={faInstagram} /></a></div>
+      
       {init ? (
         <AppRouter
           refreshUser={refreshUser}
@@ -43,9 +45,9 @@ function App() {
       )}
       
       <div className="footer">
-      <a href="https://www.instagram.com/imgreeim/" rel="noopener noreferrer" target="_blank" className="insta_link">
-                <FontAwesomeIcon icon={faInstagram} /></a>
-                <div className="footer_text">@imgreeim 2020.10.18</div>
+      {/* <a href="https://www.instagram.com/imgreeim/" rel="noopener noreferrer" target="_blank" className="insta_link">
+                <FontAwesomeIcon icon={faInstagram} /></a> */}
+                {/* <div className="footer_text">@imgreeim 2020.10.18</div> */}
       </div>
     </div>
   );

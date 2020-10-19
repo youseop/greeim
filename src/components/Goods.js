@@ -40,7 +40,7 @@ const Goods = ({ GoodsObj, isOwner }) => {
                 autoFocus
                 onChange={onChange}
               />
-              <input type="submit" value="Update explanation" className="editbtn_draw"/>
+              <input type="submit" value="Update" className="editbtn_draw"/>
             </form>
             <span onClick={toggleEditing} className="editbtn_draw">
               Cancel

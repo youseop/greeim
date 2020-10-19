@@ -17,12 +17,13 @@ body {
   /* background-color: #fafafa; */
 }
 .greeim {
-  height: 20vh;
+  height: 15vh;
   font-size: 2.5em;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 1.7vh;
+  margin-top: 8vh;
 }
 /* //////////////NAVigation//////////////// */
 .Navigation {
@@ -58,7 +59,8 @@ body {
 /* //////////////MAIN - illustration//////////////// */
 .MAIN {
   margin-top: 50px;
-  width: 100vw;
+  width: 80vw;
+  max-width: 1000px;
   min-height: 80vh;
   display: flex;
   flex-direction: column;
@@ -87,7 +89,8 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #000000;
+  background: #e2e6ec85;
+  /* background: #2171eb; */
   color: white;
   opacity: 0;
   transition: all 0.25s linear;
@@ -99,8 +102,10 @@ body {
   font-size: 1em;
 }
 .darkness_draw:hover {
-  opacity: 0.5;
+  /* opacity: 0.5; */
+  opacity: 0.2;
   transition: all 0.25s linear;
+  box-shadow: 1px 1px 10px rgb(110, 110, 110);
 }
 .DeleteEdit_img {
   z-index: 2;
@@ -145,8 +150,10 @@ body {
 /* //////////////Design - Goods//////////////// */
 .Goods_text {
   margin: 10px;
-  font-size: 0.7rem;
+  font-size: 0.7em;
   text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 /* //////////////Design - Goods//////////////// */
@@ -154,9 +161,11 @@ body {
 .insta_link {
   all: unset;
   color: gray;
-  font-size: 1.5em;
+  font-size: 1.2rem;
   cursor: pointer;
   align-self: center;
+  margin-bottom: 4vh;
+  margin-top: 2.9vh;
 }
 .insta_link:hover {
   color: #19c3f6;

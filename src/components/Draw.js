@@ -47,27 +47,28 @@ const DRAW = ({ DrawObj, isOwner }) => {
               Cancel
             </span>
           </div>
-        ) : (
-          <div className="imgbox_draw">
-            {/* <h4>{DrawObj.text}</h4> */}
-            {DrawObj.attachmentUrl && 
-            <div>
-            <img src={DrawObj.attachmentUrl} alt="" className="img_draw"/>
-            <div className="darkness_draw">
-                <FontAwesomeIcon icon={faPlus} /></div>
-            </div>
-            }
-            {isOwner && (
-              <div className="DeleteEdit_img">
-                <span onClick={onDeleteClick} className="btn_draw">
-                    Delete
-                </span>
-                <span onClick={toggleEditing} className="btn_draw">
-                    Edit
-                </span>
-              </div>
-            )}
+        ) : (<div className="Goods_controller">
+        <div className="imgbox_draw">
+          {DrawObj.attachmentUrl && 
+          <div>
+          <img src={DrawObj.attachmentUrl} alt="" className="img_draw"/>
+          <div className="darkness_draw">
+              <FontAwesomeIcon icon={faPlus} /></div>
           </div>
+          }
+          {isOwner && (
+            <div className="DeleteEdit_img">
+              <span onClick={onDeleteClick} className="btn_draw">
+                  Delete
+              </span>
+              <span onClick={toggleEditing} className="btn_draw">
+                  Edit
+              </span>
+            </div>
+          )}
+        </div>
+        <div className="Goods_text">{DrawObj.text}</div>
+        </div>
         )}
       </div>
     );

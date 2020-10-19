@@ -8,11 +8,11 @@ const AddGoods = ({ userObj }) => {
   const onSubmit = async (event) => {
     event.preventDefault();
     if (DRAW === "") {
-        alert('Submit after write explanation');
+      alert('Text input invalid');
       return;
     }
     else if (Goodsattachment === "") {
-        alert('Submit after attach your Photo');
+      alert('Img input invalid');
         return;
       }
     let GoodsattachmentUrl = "";
