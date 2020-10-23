@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Auth from "./Auth";
 import { authService } from "../fbase";
 import { useHistory } from "react-router-dom";
@@ -8,13 +8,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 const Contact = ({ userObj}) => {
-  const [email,setemail] = useState("");
-  const onChange_email = (event) => {
-    const {
-      target: {value},
-    } = event;
-    setemail(value);
-  }
     const history = useHistory();
     const onLogOutClick = () => {
       authService.signOut();
@@ -44,37 +37,6 @@ const Contact = ({ userObj}) => {
           Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
           Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
           </div>
-{/* 
-          <form className="gform" method="POST" data-email="dbtjqtjq@gmail.com" action="https://script.google.com/macros/s/AKfycbyHqKPW1GpWpCmCUrjJqpDiuzD3JlLWp1aN_UKCnlDf_WAtSSc/exec">
-          <div>
-          <fieldset>
-            <label htmlFor="name">Name: </label>
-            <input id="name" name="name" placeholder="What your Mom calls you" />
-          </fieldset>
-
-          <fieldset>
-            <label htmlFor="message">Message: </label>
-            <textarea id="message" name="message" rows="10"
-            placeholder="Tell us what's on your mind..."></textarea>
-          </fieldset>
-
-          <fieldset>
-            <label htmlFor="email"><em>Your</em> Email Address:</label>
-            <input id="email" name="email" type="email" value={email} onChange={onChange_email}
-            required placeholder="your.name@email.com"/>
-          </fieldset>
-
-          <fieldset>
-            <label htmlFor="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
-            <input id="honeypot" type="text" name="honeypot" value="" />
-          </fieldset>
-
-          <button>Send</button>
-          </div>
-          </form> */}
-          
-
-
           <Auth />
         </div>
         )}
