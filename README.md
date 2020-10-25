@@ -4,8 +4,8 @@
  Using Firebase, React JS
  
  2020.10.15 ~
-
-2020.10.18 Mid Check
+-----------------------------------------------------
+### 2020.10.18 Mid Check
 
 <img src="https://user-images.githubusercontent.com/66366941/96470923-c02d6a80-1269-11eb-8a3a-74e441552a77.JPG" width="30%">
 <img src="https://user-images.githubusercontent.com/66366941/96470933-c0c60100-1269-11eb-9696-bcda129cda26.JPG" width="30%">
@@ -20,4 +20,6 @@ Plus - need to do
 
 - display img that h-w ratio is different
 - random display
+-----------------------------------------------------
+### 2020.10.26 Mid Check
 
