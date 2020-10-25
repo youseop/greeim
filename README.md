@@ -28,7 +28,7 @@ Plus - need to do
 ### 2020.10.26 Mid Check
 
 - 3 column display
-- user can Send email to @imgreeim
+- user can Send email to @imgreeim - use EmailJS
 - display big image when user click user
 
 Plus - need to do
