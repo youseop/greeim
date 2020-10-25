@@ -6,11 +6,11 @@
  2020.10.15 ~
 
 2020.10.18 Mid Check
-![2020_10_18_2](https://user-images.githubusercontent.com/66366941/96470923-c02d6a80-1269-11eb-8a3a-74e441552a77.JPG)
+<img src="https://user-images.githubusercontent.com/66366941/96470923-c02d6a80-1269-11eb-8a3a-74e441552a77.JPG" width="40%">
 
-![delete edit](https://user-images.githubusercontent.com/66366941/96470933-c0c60100-1269-11eb-9696-bcda129cda26.JPG)
+<img src="https://user-images.githubusercontent.com/66366941/96470933-c0c60100-1269-11eb-9696-bcda129cda26.JPG" width="40%">
 
-![login-2](https://user-images.githubusercontent.com/66366941/96470964-c9b6d280-1269-11eb-9709-dc2b76ec27f6.JPG)
+<img src="https://user-images.githubusercontent.com/66366941/96470964-c9b6d280-1269-11eb-9709-dc2b76ec27f6.JPG" width="40%">
 
 - login
 - ilustration tab - No text
