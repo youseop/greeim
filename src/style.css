@@ -128,7 +128,40 @@ body.is-loading *:after {
   height: auto;
   /* border: 3px solid #eaeaea; */
   border-radius: 20px;
+  z-index: -10;
 }
+/*//////////when user click img//////////*/
+.show_onclick {
+  position: fixed;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 0px;
+  height: 100vh;
+  background-color: rgba(87, 87, 87, 0.801);
+  z-index: 10000;
+  padding-top: 3vh;
+}
+.show_onclick .Goods_controller {
+  width: 50%;
+  margin: auto;
+}
+.show_onclick .img_draw {
+  height: 90vh;
+  width: auto;
+}
+.show_onclick .Goods_text {
+  color: white;
+  font-size: 1.2rem;
+}
+.show_onclick .imgbox_draw .darkness_draw:hover {
+  /* opacity: 0.5; */
+  opacity: 0.2;
+  transition: all 0.2s linear;
+  box-shadow: 1px 1px 30px rgb(235, 233, 233);
+  cursor: pointer;
+}
+/*//////////when user click img - end//////////*/
 .imgbox_draw {
   position: relative;
 }
@@ -149,12 +182,13 @@ body.is-loading *:after {
   align-items: center;
   font-weight: 100;
   font-size: 1em;
+  cursor: pointer;
 }
 .darkness_draw:hover {
   /* opacity: 0.5; */
   opacity: 0.2;
-  transition: all 0.25s linear;
-  box-shadow: 1px 1px 10px rgb(110, 110, 110);
+  transition: all 0.2s linear;
+  box-shadow: 1px 1px 20px rgb(110, 110, 110);
 }
 .DeleteEdit_img {
   z-index: 2;

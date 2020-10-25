@@ -28,6 +28,7 @@ const Contact = ({ userObj}) => {
         <div className="admin_Illustration">Design</div>
         <AddGoods userObj={userObj}/>
         </div>
+        
         </div>
         ):(
         <div className="before_login">

@@ -6,6 +6,7 @@ import { dbService, storageService } from "../fbase";
 const DRAW = ({ DrawObj, isOwner }) => {
     const [editing, setEditing] = useState(false);
     const [newDraws, setNewDraws] = useState(DrawObj.text);
+    const [imgShow, setimgShow] = useState(false);
     const onDeleteClick = async () => {
       const ok = window.confirm("Are you sure?");
       if (ok) {
@@ -28,8 +29,12 @@ const DRAW = ({ DrawObj, isOwner }) => {
       } = event;
       setNewDraws(value);
     };
+
+    const imgOnclick = () => {
+      setimgShow(!imgShow);
+    };
     return (
-      <div>
+      <div className={(imgShow ? "show_onclick": "show")}>
         {editing ? (
           <div className="edit_draw">
             <form onSubmit={onSubmit}>
@@ -50,10 +55,11 @@ const DRAW = ({ DrawObj, isOwner }) => {
         ) : (<div className="Goods_controller">
         <div className="imgbox_draw">
           {DrawObj.attachmentUrl && 
-          <div>
-          <img src={DrawObj.attachmentUrl} alt="" className="img_draw"/>
-          <div className="darkness_draw">
-              <FontAwesomeIcon icon={faPlus} /></div>
+          <div onClick={imgOnclick}>
+            <img src={DrawObj.attachmentUrl} alt="" className="img_draw"/>
+            <div className="darkness_draw">
+                <FontAwesomeIcon icon={faPlus} />
+            </div>
           </div>
           }
           {isOwner && (
