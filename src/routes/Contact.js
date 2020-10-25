@@ -6,6 +6,7 @@ import AddDraw from "../components/AddDraw";
 import AddGoods from "../components/AddGoods";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import ContactUs from "../components/ContactUs";
 
 const Contact = ({ userObj}) => {
     const history = useHistory();
@@ -34,10 +35,8 @@ const Contact = ({ userObj}) => {
         <div className="before_login">
           <a href="https://www.instagram.com/imgreeim/" rel="noopener noreferrer" target="_blank" className="insta_link">
                 <FontAwesomeIcon icon={faInstagram} /> imgreeim</a>
-          <div className="contact_text">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
-          Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
-          Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
-          </div>
+          
+          <ContactUs />
           <Auth />
         </div>
         )}
