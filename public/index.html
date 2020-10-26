@@ -25,20 +25,31 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Greeim</title>
-
+    <!-- top button -->
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+      $( document ).ready( function() {
+        $( window ).scroll( function() {
+          if ( $( this ).scrollTop() > 1000 ) {
+            $( '.top' ).fadeIn("slow");
+          } else {
+            $( '.top' ).fadeOut("slow");
+          }
+        } );
+        $( '.top' ).click( function() {
+          $( 'html, body' ).animate( { scrollTop : 0 }, 500 );
+          return false;
+        } );
+      } );
+    </script>
+    <!-- AOS.js -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> 
+    <script> AOS.init(); </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>

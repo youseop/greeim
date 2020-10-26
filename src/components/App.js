@@ -3,6 +3,7 @@ import AppRouter from "./Router";
 import { authService } from "../fbase";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   const [init, setInit] = useState(false);
@@ -43,12 +44,8 @@ function App() {
       ) : (
         "Initializing..."
       )}
-      
-      <div className="footer">
-      {/* <a href="https://www.instagram.com/imgreeim/" rel="noopener noreferrer" target="_blank" className="insta_link">
-                <FontAwesomeIcon icon={faInstagram} /></a> */}
-                {/* <div className="footer_text">@imgreeim 2020.10.18</div> */}
-      </div>
+      <div className="footer"></div>
+      <button className="top" link="#"><FontAwesomeIcon icon={faArrowUp} /></button>
     </div>
   );
 }

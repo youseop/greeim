@@ -6,18 +6,20 @@ body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
-
-body.is-loading *,
-body.is-loading *:before,
-body.is-loading *:after {
-  -moz-animation: none !important;
-  -webkit-animation: none !important;
-  -ms-animation: none !important;
-  animation: none !important;
-  -moz-transition: none !important;
-  -webkit-transition: none !important;
-  -ms-transition: none !important;
-  transition: none !important;
+.top {
+  all: unset;
+  display: scroll;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: rgb(197, 197, 197);
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+.top:hover {
+  color: #19c3f6;
+  cursor: pointer;
+  transition: all 0.5s linear;
 }
 /* //////////////APP//////////////// */
 .APP {

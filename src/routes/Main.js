@@ -67,7 +67,6 @@ const Main = ({ userObj }) => {
               />
             ))}
           </div>
-          
         </div>
       </div>
     );
