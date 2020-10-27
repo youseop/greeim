@@ -39,3 +39,14 @@ Plus - need to do
 <img src="https://user-images.githubusercontent.com/66366941/97113906-a17b1800-1730-11eb-8384-5b264b3730df.JPG" width="30%">
 <img src="https://user-images.githubusercontent.com/66366941/97113902-9aeca080-1730-11eb-83bc-498e3d372275.JPG" width="30%">
 <img src="https://user-images.githubusercontent.com/66366941/97113898-97f1b000-1730-11eb-9f3a-7af04251a33c.JPG" width="30%">
+
+-----------------------------------------------------
+
+### 2020.10.27 Mid Check
+
+- manage CSS for other types of phone, tabs
+- Top button
+
+Plus - need to do
+
+- display after loading is finished
