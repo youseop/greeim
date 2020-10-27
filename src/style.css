@@ -75,7 +75,7 @@ body {
 .MAIN {
   margin-top: 50px;
   width: 80vw;
-  max-width: 1000px;
+  max-width: 1500px;
   min-height: 80vh;
   display: flex;
   flex-direction: column;
@@ -135,6 +135,7 @@ body {
     background: #fcfdff00;
     transition: all 0.001s linear;
   }
+  /*///////-email/////////*/
 }
 .img_draw {
   width: 100%;
@@ -178,6 +179,13 @@ body {
 }
 .show_onclick .imgbox_draw .darkness_draw:hover {
   cursor: pointer;
+  background: #2172eb00;
+  transition: all 0.5s linear;
+}
+.show_onclick .imgbox_draw .darkness_draw {
+  cursor: pointer;
+  background: #2172eb00;
+  transition: all 0.5s linear;
 }
 /*//////////when user click img - end//////////*/
 .imgbox_draw {
@@ -274,6 +282,7 @@ body {
 }
 .before_login {
   height: 70vh;
+  min-height: 600px;
   width: 60vw;
   display: flex;
   flex-direction: column;
@@ -391,7 +400,7 @@ body {
   border-radius: 20px;
   padding: 20px;
   width: 60%;
-  min-width: 350px;
+  min-width: 320px;
   display: flex;
   flex-direction: column;
   margin: 10px;
@@ -422,4 +431,17 @@ textarea {
 }
 .Contact_send:hover {
   color: #19c3f6;
+}
+@media screen and (max-width: 420px) {
+  .contact-form {
+    background-color: #e0f6fd;
+    height: auto;
+    border-radius: 20px;
+    padding: 20px;
+    width: 60%;
+    min-width: 220px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
 }
