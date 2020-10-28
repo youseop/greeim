@@ -50,3 +50,16 @@ Plus - need to do
 Plus - need to do
 
 - display after loading is finished
+
+-----------------------------------------------------
+
+### 2020.10.28 Check with @greeim
+
+- when user click img - background blurr effect
+
+Plus - need to do
+
+- display after loading is finished
+- seperated desgin pages
+
+<img src="https://user-images.githubusercontent.com/66366941/97382375-9d0c5600-190e-11eb-8322-d84e071dbd2f.png" width="30%">
