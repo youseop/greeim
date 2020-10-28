@@ -3,31 +3,33 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import { dbService, storageService } from "../fbase";
 
-const Goods = ({ GoodsObj, isOwner }) => {
+const DRAW = ({ DrawObj, isOwner }) => {
     const [editing, setEditing] = useState(false);
-    const [newGoods, setNewGoods] = useState(GoodsObj.text);
+    const [newDraws, setNewDraws] = useState(DrawObj.text);
     const [imgShow, setimgShow] = useState(false);
     const onDeleteClick = async () => {
-      const ok = window.confirm("Are you sure you want to delete?");
+      const ok = window.confirm("Are you sure?");
       if (ok) {
-        await dbService.doc(`Design/${GoodsObj.id}`).delete();
-        await storageService.refFromURL(GoodsObj.GoodsattachmentUrl).delete();
+        await dbService.doc(`DRAW/${DrawObj.id}`).delete();
+        await storageService.refFromURL(DrawObj.attachmentUrl).delete();
       }
     };
     const toggleEditing = () => setEditing((prev) => !prev);
     const onSubmit = async (event) => {
       event.preventDefault();
-      await dbService.doc(`Design/${GoodsObj.id}`).update({
-        text: newGoods,
+      await dbService.doc(`DRAW/${DrawObj.id}`).update({
+        text: newDraws,
       });
       setEditing(false);
+      alert("Update")
     };
     const onChange = (event) => {
       const {
         target: { value },
       } = event;
-      setNewGoods(value);
+      setNewDraws(value);
     };
+
     const imgOnclick = () => {
       setimgShow(!imgShow);
     };
@@ -39,7 +41,7 @@ const Goods = ({ GoodsObj, isOwner }) => {
               <input
                 type="text"
                 placeholder="Edit"
-                value={newGoods}
+                value={newDraws}
                 required
                 autoFocus
                 onChange={onChange}
@@ -50,32 +52,32 @@ const Goods = ({ GoodsObj, isOwner }) => {
               Cancel
             </span>
           </div>
-        ) : (
-          <div className="Goods_controller">
-          <div className="imgbox_draw">
-            {GoodsObj.GoodsattachmentUrl && 
+        ) : (<div className="Goods_controller">
+        <div className="imgbox_draw">
+          {DrawObj.attachmentUrl && 
           <div onClick={imgOnclick}>
-            <img src={GoodsObj.GoodsattachmentUrl} alt="" className="img_draw"/>
+            <img src={DrawObj.attachmentUrl} alt="" className="img_draw"/>
             <div className="darkness_draw">
-                <FontAwesomeIcon icon={faPlus} /></div>
+                <FontAwesomeIcon icon={faPlus} />
             </div>
-            }
-            {isOwner && (
-              <div className="DeleteEdit_img">
-                <span onClick={onDeleteClick} className="btn_draw">
-                    Delete
-                </span>
-                <span onClick={toggleEditing} className="btn_draw">
-                    Edit
-                </span>
-              </div>
-            )}
           </div>
-          <div className="Goods_text">{GoodsObj.text}</div>
-          </div>
+          }
+          {isOwner && (
+            <div className="DeleteEdit_img">
+              <span onClick={onDeleteClick} className="btn_draw">
+                  Delete
+              </span>
+              <span onClick={toggleEditing} className="btn_draw">
+                  Edit
+              </span>
+            </div>
+          )}
+        </div>
+        <div className="Goods_text">{DrawObj.text}</div>
+        </div>
         )}
       </div>
     );
   };
   
-export default Goods;
+export default DRAW;

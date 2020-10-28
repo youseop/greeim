@@ -16,11 +16,11 @@ body {
   cursor: pointer;
   transition: all 0.5s linear;
 }
-.top:hover {
+/* .top:hover {
   color: #19c3f6;
   cursor: pointer;
   transition: all 0.5s linear;
-}
+} */
 /* //////////////APP//////////////// */
 .APP {
   width: 100vw;
@@ -162,6 +162,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* blurr effect */
+  backdrop-filter: blur(6px);
 }
 .show_onclick .Goods_controller {
   width: 50%;
