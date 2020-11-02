@@ -172,6 +172,7 @@ body {
 .show_onclick .img_draw {
   max-width: 90vw;
   max-height: 80vh;
+  min-height: 80vh;
   width: auto;
 }
 .show_onclick .Goods_text {

@@ -42,7 +42,7 @@ function App() {
           userObj={userObj}
         />
       ) : (
-        "Initializing..."
+        " "
       )}
       <div className="footer"></div>
       <button className="top" link="#"><FontAwesomeIcon icon={faArrowUp} /></button>

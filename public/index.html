@@ -10,20 +10,8 @@
       content="illustrate"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo512.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
     <title>Greeim</title>
     <!-- top button -->
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -42,14 +30,81 @@
         } );
       } );
     </script>
-    <!-- AOS.js -->
-    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
-    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> 
-    <script> AOS.init(); </script> -->
+    <style>/* Center the loader */
+      #loader {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          z-index: 1;
+          width: 150px;
+          height: 150px;
+          margin: -75px 0 0 -75px;
+          border: 16px solid #f3f3f3;
+          border-radius: 50%;
+          border-top: 16px solid #3498db;
+          width: 120px;
+          height: 120px;
+          -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+      }
+
+      @-webkit-keyframes spin {
+          0% {
+              -webkit-transform: rotate(0deg);
+          }
+          100% {
+              -webkit-transform: rotate(360deg);
+          }
+      }
+
+      @keyframes spin {
+          0% {
+              transform: rotate(0deg);
+          }
+          100% {
+              transform: rotate(360deg);
+          }
+      }
+
+      /* Add animation to "page content" */
+      .animate-bottom {
+          position: relative;
+          -webkit-animation-name: animatebottom;
+          -webkit-animation-duration: 1s;
+          animation-name: animatebottom;
+          animation-duration: 1s
+      }
+
+      @-webkit-keyframes animatebottom {
+          from {
+              bottom: -100px;
+              opacity: 0
+          }
+          to {
+              bottom: 0px;
+              opacity: 1
+          }
+      }
+
+      @keyframes animatebottom {
+          from {
+              bottom: -100px;
+              opacity: 0
+          }
+          to {
+              bottom: 0;
+              opacity: 1
+          }
+      }
+
+      #myDiv {
+          display: none;
+          text-align: center;
+      }
+  </style>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="loader"></div>
     <div id="root"></div>
   </body>
 </html>

@@ -37,7 +37,19 @@ const Design = ({ userObj }) => {
           setdesigns3(DesignArray3);
         });
     }, []);
+    var myVar;
+    
+    function myFunction() {
+      myVar = setTimeout(showPage, 700);
+    }
+    
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+    }
     return (
+      <div  onLoad={myFunction()} style={{margin:0}}>
+      <div style={{display: 'none'}} id="myDiv" className="animate-bottom">
       <div className="MAIN">
         <div className="MAIN_container">
           <div className="column_container">
@@ -68,6 +80,8 @@ const Design = ({ userObj }) => {
             ))}
           </div>
         </div>
+      </div>
+      </div>
       </div>
     );
   };
