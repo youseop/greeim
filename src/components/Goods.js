@@ -8,6 +8,7 @@ const Goods = ({ GoodsObj, isOwner, match,id }) => {
     const [editing, setEditing] = useState(false);
     const [newGoods, setNewGoods] = useState(GoodsObj.text);
     const [imgShow, setimgShow] = useState(false);
+    
     const onDeleteClick = async () => {
       const ok = window.confirm("Are you sure you want to delete?");
       if (ok) {

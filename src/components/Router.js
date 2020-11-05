@@ -15,7 +15,7 @@ const AppRouter = ({ refreshUser, isLoggedIn, userObj }) => {
             <Route exact path="/">
               <Main userObj={userObj} />
             </Route>
-            <Route exact path="/Design" 
+            <Route path="/Design" 
               render={(props) => <Desing_main userObj={userObj} {...props}/>}/>
             <Route exact path="/Contact">
               <Contact userObj={userObj}/>

@@ -1,13 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { dbService } from "../fbase";
 
-const GoodsDetail = ({match}) => {
-    console.log(match)
-    alert("success")
+
+const GoodsDetail = () => {
     return(
     <div>
-        <div>hey!</div>
-        <div>hey!</div>
-        </div>
+        <div>hey</div>
+    </div>
     )
 }
 

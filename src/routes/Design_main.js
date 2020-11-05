@@ -8,7 +8,7 @@ const Desing_main = ({ userObj, match }) => {
         <>
         <Route exact path={match.path}
               render={(props) => <Design userObj={userObj} {...props}/>}/>
-        <Route path={`${match.path}/:id`} component={Design} />
+        <Route path={`${match.path}/:id`} component={GoodsDetail}/>
         </>
     )
 }
