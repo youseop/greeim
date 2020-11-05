@@ -1,9 +1,10 @@
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { dbService, storageService } from "../fbase";
 
-const Goods = ({ GoodsObj, isOwner }) => {
+const Goods = ({ GoodsObj, isOwner, match,id }) => {
     const [editing, setEditing] = useState(false);
     const [newGoods, setNewGoods] = useState(GoodsObj.text);
     const [imgShow, setimgShow] = useState(false);
@@ -28,11 +29,8 @@ const Goods = ({ GoodsObj, isOwner }) => {
       } = event;
       setNewGoods(value);
     };
-    const imgOnclick = () => {
-      setimgShow(!imgShow);
-    };
     return (
-      <div className={(imgShow ? "show_onclick": "show")}>
+      <div className="show">
         {editing ? (
           <div className="edit_draw">
             <form onSubmit={onSubmit}>
@@ -54,11 +52,15 @@ const Goods = ({ GoodsObj, isOwner }) => {
           <div className="Goods_controller">
           <div className="imgbox_draw">
             {GoodsObj.GoodsattachmentUrl && 
-          <div onClick={imgOnclick}>
+          <div>
             <img src={GoodsObj.GoodsattachmentUrl} alt="" className="img_draw"/>
-            <div className="darkness_draw">
-                <FontAwesomeIcon icon={faPlus} /></div>
+            <Link to={`${match.url}/${id}`}>
+              <div className="darkness_draw">
+                <FontAwesomeIcon icon={faPlus} />
+              </div>
+            </Link>
             </div>
+            
             }
             {isOwner && (
               <div className="DeleteEdit_img">

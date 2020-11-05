@@ -138,8 +138,8 @@ body {
   /*///////-email/////////*/
 }
 .img_draw {
-  width: 100%;
   height: auto;
+  width: 100%;
   /* border: 3px solid #eaeaea; */
   border-radius: 20px;
   z-index: -10;
@@ -172,7 +172,6 @@ body {
 .show_onclick .img_draw {
   max-width: 90vw;
   max-height: 80vh;
-  min-height: 80vh;
   width: auto;
 }
 .show_onclick .Goods_text {
@@ -447,4 +446,40 @@ textarea {
     flex-direction: column;
     margin: 10px;
   }
+}
+
+/* 로딩 애니메이션 */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 0.8s;
+  animation-name: animatebottom;
+  animation-duration: 0.8s;
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -70px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -70px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
 }

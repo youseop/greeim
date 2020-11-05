@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
+import { Route } from "react-router-dom";
 import Goods from "../components/Goods";
+import GoodsDetail from "../components/GoodsDetail";
 import { dbService } from "../fbase";
 
-const Design = ({ userObj }) => {
+const Design = ({ userObj, match }) => {
   const [designs1, setdesigns1] = useState([]);
   const [designs2, setdesigns2] = useState([]);
   const [designs3, setdesigns3] = useState([]);
@@ -44,17 +46,18 @@ const Design = ({ userObj }) => {
     }
     
     function showPage() {
-      document.getElementById("loader").style.display = "none";
       document.getElementById("myDiv").style.display = "block";
     }
     return (
-      <div  onLoad={myFunction()} style={{margin:0}}>
+      <div>
       <div style={{display: 'none'}} id="myDiv" className="animate-bottom">
       <div className="MAIN">
         <div className="MAIN_container">
           <div className="column_container">
             {designs1.map((goods) => (
             <Goods
+              id={goods.createdAt}
+              match={match}
               key={goods.id}
               GoodsObj={goods}
               isOwner={goods.creatorId === UID}
@@ -64,6 +67,8 @@ const Design = ({ userObj }) => {
           <div className="column_container">
             {designs2.map((goods) => (
             <Goods
+              id={goods.createdAt}
+              match={match}
               key={goods.id}
               GoodsObj={goods}
               isOwner={goods.creatorId === UID}
@@ -73,6 +78,8 @@ const Design = ({ userObj }) => {
           <div className="column_container">
             {designs3.map((goods) => (
             <Goods
+              id={goods.createdAt}
+              match={match}
               key={goods.id}
               GoodsObj={goods}
               isOwner={goods.creatorId === UID}
@@ -80,6 +87,7 @@ const Design = ({ userObj }) => {
             ))}
           </div>
         </div>
+        <div  onLoad={myFunction()} style={{margin:0}}></div>
       </div>
       </div>
       </div>

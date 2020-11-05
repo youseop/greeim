@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import DRAW from "../components/Draw";
 import { dbService } from "../fbase";
+import jQuery from "jquery";
+window.$ = window.jQuery = jQuery;
 
 const Main = ({ userObj }) => {
     const [designs1, setdesigns1] = useState([]);
     const [designs2, setdesigns2] = useState([]);
     const [designs3, setdesigns3] = useState([]);
-
     const [UID, setUID]=useState("");
     useEffect(() => {
       if(userObj){
@@ -40,15 +41,14 @@ const Main = ({ userObj }) => {
     var myVar;
     
     function myFunction() {
-      myVar = setTimeout(showPage, 700);
+      myVar = setTimeout(showPage, 1000);
     }
     
     function showPage() {
-      document.getElementById("loader").style.display = "none";
       document.getElementById("myDiv").style.display = "block";
     }
     return (
-      <div  onLoad={myFunction()} style={{margin:0}}>
+      <div style={{margin:0}}>
       <div style={{display: 'none'}} id="myDiv" className="animate-bottom">
       <div className="MAIN">
         <div className="MAIN_container">
@@ -79,6 +79,7 @@ const Main = ({ userObj }) => {
               />
             ))}
           </div>
+          <div  onLoad={myFunction()} style={{margin:0}}></div>
         </div>
       </div>
       </div>
