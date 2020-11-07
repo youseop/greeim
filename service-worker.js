@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/BOJ_TESTCASE/precache-manifest.2a96705b718c4dd48322ce767a26b0a5.js"
+  "/greeim/precache-manifest.057db37e48023f588e08347a90eb9b8b.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/BOJ_TESTCASE/index.html", {
+workbox.routing.registerNavigationRoute("/greeim/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });

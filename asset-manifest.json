@@ -1,13 +1,13 @@
 {
-  "main.css": "/BOJ_TESTCASE/static/css/main.000bc3ba.chunk.css",
-  "main.js": "/BOJ_TESTCASE/static/js/main.35f1936f.chunk.js",
-  "main.js.map": "/BOJ_TESTCASE/static/js/main.35f1936f.chunk.js.map",
-  "runtime~main.js": "/BOJ_TESTCASE/static/js/runtime~main.fd6e1722.js",
-  "runtime~main.js.map": "/BOJ_TESTCASE/static/js/runtime~main.fd6e1722.js.map",
-  "static/js/2.72954ac4.chunk.js": "/BOJ_TESTCASE/static/js/2.72954ac4.chunk.js",
-  "static/js/2.72954ac4.chunk.js.map": "/BOJ_TESTCASE/static/js/2.72954ac4.chunk.js.map",
-  "index.html": "/BOJ_TESTCASE/index.html",
-  "precache-manifest.2a96705b718c4dd48322ce767a26b0a5.js": "/BOJ_TESTCASE/precache-manifest.2a96705b718c4dd48322ce767a26b0a5.js",
-  "service-worker.js": "/BOJ_TESTCASE/service-worker.js",
-  "static/css/main.000bc3ba.chunk.css.map": "/BOJ_TESTCASE/static/css/main.000bc3ba.chunk.css.map"
+  "main.css": "/greeim/static/css/main.000bc3ba.chunk.css",
+  "main.js": "/greeim/static/js/main.35f1936f.chunk.js",
+  "main.js.map": "/greeim/static/js/main.35f1936f.chunk.js.map",
+  "runtime~main.js": "/greeim/static/js/runtime~main.f926e96b.js",
+  "runtime~main.js.map": "/greeim/static/js/runtime~main.f926e96b.js.map",
+  "static/js/2.bea9a864.chunk.js": "/greeim/static/js/2.bea9a864.chunk.js",
+  "static/js/2.bea9a864.chunk.js.map": "/greeim/static/js/2.bea9a864.chunk.js.map",
+  "index.html": "/greeim/index.html",
+  "precache-manifest.057db37e48023f588e08347a90eb9b8b.js": "/greeim/precache-manifest.057db37e48023f588e08347a90eb9b8b.js",
+  "service-worker.js": "/greeim/service-worker.js",
+  "static/css/main.000bc3ba.chunk.css.map": "/greeim/static/css/main.000bc3ba.chunk.css.map"
 }
