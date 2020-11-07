@@ -10,7 +10,7 @@ body {
   all: unset;
   display: scroll;
   position: fixed;
-  bottom: 20px;
+  bottom: 50px;
   right: 20px;
   color: rgb(197, 197, 197);
   cursor: pointer;
