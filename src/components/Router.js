@@ -1,7 +1,6 @@
 import React from "react";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import Main from "../routes/Main";
-import Design from "../routes/Design";
 import Contact from "../routes/Contact";
 import Navigation from "./Navigation";
 import Desing_main from "../routes/Design_main";

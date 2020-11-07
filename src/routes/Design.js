@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Route } from "react-router-dom";
 import Goods from "../components/Goods";
-import GoodsDetail from "../components/GoodsDetail";
 import { dbService } from "../fbase";
 
 const Design = ({ userObj, match }) => {
@@ -39,14 +37,15 @@ const Design = ({ userObj, match }) => {
           setdesigns3(DesignArray3);
         });
     }, []);
-    var myVar;
     
     function myFunction() {
-      myVar = setTimeout(showPage, 700);
+      var myVar = setTimeout(showPage, 700);
     }
     
     function showPage() {
-      document.getElementById("myDiv").style.display = "block";
+      if (document.getElementById("myDiv").style){
+        document.getElementById("myDiv").style.display = "block";
+      }
     }
     return (
       <div>

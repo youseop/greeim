@@ -483,3 +483,21 @@ textarea {
   display: none;
   text-align: center;
 }
+.detail_body {
+  margin: 30px;
+  max-width: 900px;
+}
+.detail_text {
+  font-size: 1.2em;
+  margin: 30px;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.detail_img_draw {
+  height: auto;
+  width: 100%;
+  /* border: 3px solid #eaeaea; */
+  /* border-radius: 20px; */
+}
