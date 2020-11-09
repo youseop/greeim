@@ -1,4 +1,4 @@
-# imgreeim
+# imgreeim - Portfolio site 
 Portfolio Site - making with  [@imgreeim](https://www.instagram.com/imgreeim/)
  
  Using Firebase & React JS
