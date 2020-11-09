@@ -58,6 +58,7 @@ Plus - need to do
 ### 2020.10.28 Check with @greeim
 
 - when user click img - background blurr effect
+- Information of contents in Detail Tab - Thumbnail img, Detail img, text >> To make detail page
 
 Plus - need to do
 
@@ -65,6 +66,7 @@ Plus - need to do
 - seperated desgin pages
 
 <img src="https://user-images.githubusercontent.com/66366941/97382375-9d0c5600-190e-11eb-8322-d84e071dbd2f.png" width="30%">
+<img src="https://user-images.githubusercontent.com/66366941/98502241-dfca1880-2294-11eb-9be3-99f200a905cf.JPG" width="30%">
 
 -----------------------------------------------------
 
