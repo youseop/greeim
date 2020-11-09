@@ -12,7 +12,7 @@ Portfolio Site - making with  [@imgreeim](https://www.instagram.com/imgreeim/)
 ### 2020.10.18 Mid Check
 
 - login
-- ilustration tab - No text
+- illustration tab - No text
 - design tab
 - User can add img to illustration tab or design tab
 
