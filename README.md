@@ -71,5 +71,5 @@ Plus - need to do
 ### 2020.11.06 Mid Check
 
 - Moving to the detail page when user click photo in design tab. 
-  Using react-router >> Dynamic Routing
+                   Using react-router >> Dynamic Routing
 
