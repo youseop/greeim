@@ -1,9 +1,11 @@
 # imgreeim
 Portfolio Site - making with  [@imgreeim](https://www.instagram.com/imgreeim/)
  
- Using Firebase, React JS
+ Using Firebase & React JS
  
  2020.10.15 ~
+ 
+ - Build 2020-11-08 [Go to the website CLICK!](https://youseop.github.io/greeim/#/)
  
 -----------------------------------------------------
 
@@ -63,3 +65,11 @@ Plus - need to do
 - seperated desgin pages
 
 <img src="https://user-images.githubusercontent.com/66366941/97382375-9d0c5600-190e-11eb-8322-d84e071dbd2f.png" width="30%">
+
+-----------------------------------------------------
+
+### 2020.11.06 Mid Check
+
+- Moving to the detail page when user click photo in design tab. 
+  Using react-router >> Dynamic Routing
+
