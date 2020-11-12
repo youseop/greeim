@@ -33,7 +33,7 @@ function App() {
   return (
     <div className="APP">
       <div className="greeim">greeim<a href="https://www.instagram.com/imgreeim/" rel="noopener noreferrer" target="_blank" className="insta_link">
-                <FontAwesomeIcon icon={faInstagram} /></a></div>
+        <FontAwesomeIcon icon={faInstagram} /></a></div>
       
       {init ? (
         <AppRouter

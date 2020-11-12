@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
-import { storageService, dbService } from "../fbase";
+import { storageService, dbService } from "../../fbase";
 
 const AddGoods = ({ userObj }) => {
   const [DRAW, setDRAW] = useState("");
