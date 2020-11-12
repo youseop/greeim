@@ -10,9 +10,10 @@ body {
   all: unset;
   display: scroll;
   position: fixed;
-  bottom: 50px;
+  bottom: 20px;
   right: 20px;
   color: rgb(197, 197, 197);
+  z-index: 1000;
   cursor: pointer;
   transition: all 0.5s linear;
 }
@@ -216,7 +217,7 @@ body {
   /* opacity: 0.5; */
   opacity: 0.2;
   transition: all 0.2s linear;
-  box-shadow: 1px 1px 20px rgb(110, 110, 110);
+  /* box-shadow: 1px 1px 20px rgb(110, 110, 110); */
 }
 .DeleteEdit_img {
   z-index: 2;
