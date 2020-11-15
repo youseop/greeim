@@ -38,17 +38,23 @@ const Main = ({ userObj }) => {
           setdesigns3(DesignArray3);
         });
     }, []);
-    var myVar;
     
     function myFunction() {
+      var myVar;
       myVar = setTimeout(showPage, 2000);
     }
-    
     function showPage() {
-      document.getElementById("myDiv").style.display = "block";
+      if (document.getElementById("myDiv").style){
+        document.getElementById("myDiv").style.display = "block";
+        document.getElementById("loading").style.display = "none";
+      }
     }
     return (
       <div style={{margin:0}}>
+        <div id="loading" className="loadingCOMPONENT">
+          <img src="https://i.imgur.com/uCbc2mh.png" alt=""/>
+          <div className="loadingTEXT">loading</div>
+        </div>
       <div style={{display: 'none'}} id="myDiv" className="animate-bottom">
       <div className="MAIN">
         <div className="MAIN_container">

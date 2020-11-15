@@ -13,6 +13,7 @@ const GoodsDetail = ({match}) => {
         id: doc.id,
         ...doc.data(),
         }));
+        
         const DetailObj = tempDesignArray.filter((design) => {
           if (design.createdAt === CreatedAt){
               settext(design.text)

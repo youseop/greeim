@@ -2,11 +2,13 @@ import React from "react";
 import Auth from "./Auth";
 import { authService } from "../fbase";
 import { useHistory } from "react-router-dom";
+
 import AddDraw from "../components/Add/AddDraw";
 import AddGoods from "../components/Add/AddGoods";
+import ContactUs from "../components/ContactUs";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
-import ContactUs from "../components/ContactUs";
 
 const Contact = ({ userObj}) => {
     const history = useHistory();

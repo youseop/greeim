@@ -457,7 +457,23 @@ textarea {
   animation-name: animatebottom;
   animation-duration: 0.8s;
 }
-
+.loadingCOMPONENT {
+  margin-top: 20vh;
+  position: relative;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 2.2s;
+  animation-name: animatetop;
+  animation-duration: 2.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.loadingTEXT {
+  font-size: 1.2rem;
+  font-weight: 200;
+  margin-top: 5vh;
+}
 @-webkit-keyframes animatebottom {
   from {
     bottom: -70px;
@@ -479,6 +495,27 @@ textarea {
     opacity: 1;
   }
 }
+@-webkit-keyframes animatetop {
+  from {
+    bottom: 0px;
+    opacity: 1;
+  }
+  to {
+    bottom: -40px;
+    opacity: 0;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    bottom: 0px;
+    opacity: 1;
+  }
+  to {
+    bottom: -40px;
+    opacity: 0;
+  }
+}
 
 #myDiv {
   display: none;
@@ -486,7 +523,8 @@ textarea {
 }
 .detail_body {
   margin: 30px;
-  max-width: 900px;
+  max-width: 700px;
+  width: 90%;
 }
 .detail_text {
   font-size: 1.2em;
