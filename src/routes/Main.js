@@ -38,9 +38,9 @@ const Main = ({ userObj }) => {
           setdesigns3(DesignArray3);
         });
     }, []);
+    var myVar;
     
     function myFunction() {
-      var myVar;
       myVar = setTimeout(showPage, 2000);
     }
     function showPage() {
