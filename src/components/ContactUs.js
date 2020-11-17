@@ -7,7 +7,7 @@ export default function ContactUs() {
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs.sendForm('service_n1faqhc', 'template_eeypq78', e.target, 'user_P4rmUyfuRSNbcqMXmVP3b')
+    emailjs.sendForm('service_kiky1nn', 'template_mi92ncm', e.target, 'user_YxR1mwpkVt7vjDqQ61bqG')
       .then((result) => {
           console.log(result.text);
           alert('successfully sent to @imgreeim');

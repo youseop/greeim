@@ -43,7 +43,7 @@ const Design = ({ userObj, match }) => {
       myVar = setTimeout(showPage, 2000);
     }
     function showPage() {
-      if (document.getElementById("myDiv").style){
+      if (document.getElementById("myDiv")){
         document.getElementById("myDiv").style.display = "block";
         document.getElementById("loading").style.display = "none";
       }
@@ -52,7 +52,7 @@ const Design = ({ userObj, match }) => {
       <div>
       <div id="loading" className="loadingCOMPONENT">
         <img src="https://i.imgur.com/uCbc2mh.png" alt=""/>
-        <div className="loadingTEXT">loading</div>
+        {/* <div className="loadingTEXT">loading</div> */}
       </div>
       <div style={{display: 'none'}} id="myDiv" className="animate-bottom">
       <div className="MAIN">
