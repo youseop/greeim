@@ -32,6 +32,11 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   /* background-color: #fafafa; */
 }
+.TITLE {
+  all: unset;
+  color: black;
+  cursor: pointer;
+}
 .greeim {
   height: 15vh;
   font-size: 2.5em;

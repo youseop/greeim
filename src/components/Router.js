@@ -5,7 +5,7 @@ import Contact from "../routes/Contact";
 import Navigation from "./Navigation";
 import Desing_main from "../routes/Design_main";
 
-const AppRouter = ({ refreshUser, isLoggedIn, userObj }) => {
+const AppRouter = ({ userObj }) => {
   return (
     <Router>
      <Navigation userObj={userObj} />
