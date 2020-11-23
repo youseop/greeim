@@ -51,7 +51,7 @@ const Design = ({ userObj, match }) => {
     return (
       <div>
       <div id="loading" className="loadingCOMPONENT">
-        <img src="https://i.imgur.com/uCbc2mh.png" alt=""/>
+        <img src="https://i.imgur.com/j68N2V9.png" alt="" className="load_img"/>
         {/* <div className="loadingTEXT">loading</div> */}
       </div>
       <div style={{display: 'none'}} id="myDiv" className="animate-bottom">
