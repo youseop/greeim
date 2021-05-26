@@ -1,13 +1,58 @@
-# imgreeim - Portfolio site 
-Portfolio Site - making with  [@imgreeim](https://www.instagram.com/imgreeim/)
+# imgreeim님의 포트폴리오 사이트
+Portfolio Site - [@imgreeim](https://www.instagram.com/imgreeim/)
+
+서비스 주소: https://imgreeim.com/
+
+
+<br>
+
+## 기획 동기
+
+[백준 테스트케이스 모음 사이트](https://youseop.github.io/BOJ_TESTCASE/#/)를 만든 후 누군가가 실제로 원하는 사이트를 만들어보고 싶었습니다. 고객을 한번 만들어보고자 평소 관심있게 보던 디자이너분께 포트폴리오 사이트를 만들어 드리겠다고 연락드렸습니다. 다행히 흔쾌히 허락해주셨습니다. 디자이너님이 사진을 관리하고, 포트폴리오 사이트로 사용가능한 사이트를 만들게 되었습니다.
+
+
+<br>
+
+## 사용 스택
+
+React Js를 사용해 UI를 디자인했으며, 사진 저장은 Firebase를 사용했습니다.
+
+
+<br>
+
+## 주요 기능 소개
+
+#### 메인 페이지
+
+비율이 서로 다른 사진들을 매끄럽게 배치
+
+<p align="center"><img src="https://user-images.githubusercontent.com/66366941/119627922-982d6780-be47-11eb-99ee-3272b3e9c6b3.png" width="50%"></p>
+
+#### CRUD를 위한 admin
+
+Illustration 페이지와 design 페이지에 각각 작업물을 추가할 수 있습니다.
+design 페이지에서는 게시글을 클릭했을 때, 해당 페이지로 넘어가며 작업물에 대한 디테일한 이미지가 나타나게 됩니다. 따라서, desgin 페이지는 썸네일 이미지와 디테일 이미지를 함께 입력받습니다.
+
+<p align="center"><img src="https://user-images.githubusercontent.com/66366941/97113817-10a43c80-1730-11eb-8cf7-0e6b781bb8ea.JPG" width="50%"></p>
+
+#### Contact Us
+
+Email Js를 활용한 디자이너님께 직접 이메일을 보낼 수 있는 공간을 마련했습니다.
+
+<p align="center"><img src="https://user-images.githubusercontent.com/66366941/97113898-97f1b000-1730-11eb-9f3a-7af04251a33c.JPG" width="30%"></p>
+
  
- Using Firebase & React JS
+ 
+<br>
+ 
+ -----------------------------------------------------
+ # 진행 과정
+ 
  
  2020.10.15 ~
  
  - Build 2020-11-08 [Go to the website CLICK!](https://youseop.github.io/greeim/#/)
  
------------------------------------------------------
 
 ### 2020.10.18 Mid Check
 
