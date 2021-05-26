@@ -124,7 +124,7 @@ Using createdAt-information, detail page find the other informations in the data
 
 Plus - need to do
 
-- show img after loading(I tried to, but failed. Still now the page shows img after two sec.)
+- show img after loading
 
 <img src="https://user-images.githubusercontent.com/66366941/98501539-db9cfb80-2292-11eb-96a7-472e35120227.JPG" width="30%">
 <img src="https://user-images.githubusercontent.com/66366941/98501541-dcce2880-2292-11eb-8027-67a2f2bc0dd2.JPG" width="30%">
